@@ -9,8 +9,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
+    "api": "0.0.1",
+    "db": "^1.1.1",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
     "inquirer": "^7.0.4",
-    "mysql": "^2.16.0"
+    "mysql": "^2.16.0",
+    "routes": "^2.1.0"
   }
 }
