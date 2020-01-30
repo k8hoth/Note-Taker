@@ -27,7 +27,7 @@ var saveNote = function(note) {
 // A function for deleting a note from the db
 var deleteNote = function(id) {
   return $.ajax({
-    url: "api/notes/" + id,
+    url: "/api/notes" + id,
     method: "DELETE"
   });
 };
@@ -106,7 +106,7 @@ var handleRenderSaveBtn = function() {
 // Render's the list of note titles
 var renderNoteList = function(notes) {
   $noteList.empty();
-
+console.log(notes);
   var noteListItems = [];
 
   for (var i = 0; i < notes.length; i++) {
